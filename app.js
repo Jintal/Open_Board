@@ -6,7 +6,7 @@ const app = express();
 // To find the index.html file
 app.use(express.static('public'));
 
-const port = process.ent.PORT || 5500;
+const port = process.env.PORT || 5500;
 const server = app.listen(port, function(){
     console.log('Listening to port ', port);
 });
